@@ -1,3 +1,9 @@
 <h1>Stimulus Rails Applicatioon</h1>
 
 <div data-controller=hello></div>
+
+<div data-controller="autocomplete" data-autocomplete-url="/birds/search">
+  <input type="text" data-autocomplete-target="input"/>
+  <input type="hidden" name="bird_id" data-autocomplete-target="hidden"/>
+  <ul class="list-group" data-autocomplete-target="results"></ul>
+</div>
